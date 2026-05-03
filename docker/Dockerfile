@@ -1,5 +1,5 @@
 # pull official base image
-FROM node
+FROM node:24-alpine
 
 # make directory
 RUN mkdir -p /app
