@@ -1,0 +1,21 @@
+version: '3'
+networks:
+  auctionpwa:
+      driver: bridge
+services:
+  auctionpwa:
+    container_name: auctionpwa
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 70:7700
+    stdin_open: true
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    networks:
+      - auctionpwa
