@@ -1,10 +1,10 @@
 version: '3'
 networks:
-  auctionpwa:
+  auctionwww:
       driver: bridge
 services:
-  auctionpwa:
-    container_name: auctionpwa
+  auctionwww:
+    container_name: auctionwww
     build:
       context: .
       dockerfile: ./docker/Dockerfile
@@ -18,4 +18,4 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
     networks:
-      - auctionpwa
+      - auctionwww
