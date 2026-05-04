@@ -12,7 +12,7 @@ services:
       - '.:/app'
       - '/app/node_modules'
     ports:
-      - 71:7700
+      - 71:7701
     stdin_open: true
     tty: true
     environment:

@@ -20,7 +20,7 @@ RUN npm install --legacy-peer-deps
 COPY . ./
 COPY .env ./
 RUN ls -li
-EXPOSE 4001
+EXPOSE 7071
 
 # start app
 ENV NODE_OPTIONS=--openssl-legacy-provider
