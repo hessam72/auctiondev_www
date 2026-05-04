@@ -28,8 +28,8 @@
   "scripts": {
     "docker:up": "docker-compose up -d --build",
     "docker:down": "docker-compose down",
-    "start": "craco start",
-    "build": "craco build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider craco start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider craco build",
     "test": "craco test",
     "eject": "craco eject"
   },

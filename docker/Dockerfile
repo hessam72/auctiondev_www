@@ -23,4 +23,5 @@ RUN ls -li
 EXPOSE 4001
 
 # start app
+ENV NODE_OPTIONS=--openssl-legacy-provider
 CMD ["npm", "start"]
